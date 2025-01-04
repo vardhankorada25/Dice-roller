@@ -46,9 +46,7 @@ input[type="number"] {
 }
 
 button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    background: linear-gradient(135deg, #ff6f61, #ff3b2f);
+    background: linear-gradient(135deg, #ff6f61, #6a11cb);
     color: white;
     border: none;
     border-radius: 25px;
@@ -57,6 +55,16 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    height: 50px;
+    width: 100px;
+    font-size: 1rem;
+   
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff6f61, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 111, 97, 0.4);
 }
 
 button::before {
@@ -72,11 +80,6 @@ button::before {
     border-radius: 50%;
 }
 
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(255, 111, 97, 0.4);
-}
-
 button:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
@@ -85,7 +88,6 @@ button:active {
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 #diceresult {
     margin-top: 25px;
     font-size: 1.5rem;
@@ -143,5 +145,7 @@ button:active {
 
     button {
         padding: 8px 16px;
+        font-size: 0.9rem;
+        
     }
 }
